@@ -1,0 +1,77 @@
+HTTP
+
+Generally http stands for hypertext transfer protocol and it is used in client server communication. By using http user sends 
+the request to the server and the server sends the response to the user. There are several stages of development of http but we 
+focus mainly on http1 which created on 1997 and http2 which in 2015
+
+http1
+http1 is a first walkie talkie for web browsers and servers. It uses plain text messages to talk to each other. THis makes it easy to
+understand but not fast.
+
+It provide one connection at a time. Think of it like a single walkie alkie channel. if one message is taking a long time everything else has to wait.
+It is simple but not super efficient. text messages are bulky for computer to handle. Plus messages asking for web pages often have similar
+infor, but http1 does not shrink that down very well
+
+despite these limitations http1 was a game changer/ it allowed web browser and servers to chat back and forth much faster than before this paved the way for the web
+as we know it
+
+It provide persistent connection. imagine having mutliple walkie talkie channels open at once. this lets browsers send more than one message
+without waiting for each reply
+browsers could send a bunch of messaages in a row, hoping for faster replies. however, this was not always reliable.
+
+while http1 did a great job, newer versions like ttp2 came along with even better features. think of http2 as a fancy walie talkie system with mulitple channels, uses a more efficient
+languages and avoids repating info. this makes webbrowsing much faster today.
+
+in conclusion, http1 was crucial stepping stone for the web. it may not be the most high tech tool anymore, but understanding it helps us
+appreciate how the web has become so fast and smooth
+
+
+http2
+It is a supercharged walkie talkie system for web browsers and servers. It usess a special, shorter language that computers understand better, and it can handle mutliple conversaations
+at once
+
+In multitasking, imagine that having tons of talkie walkie channels open, all working together. Even if one conversation takes a while like a big image download others can zip right through 
+no more waiting in line
+
+In http1 did not shrink down similar info in messages http2 has a built in codebook to remember those common bits and shrink them way down making messages even smaller
+
+Server push the server being super helpful and sending along any extra infor you might need before you evene ask this can speed things up even more
+
+It helps to faster downloads. picture downloading abunch of files at once, instead of one by one. thats the power of multiplexing
+
+it reduced wait time. no more waiting for slow download to hold up the whole whole page. with mulitple channels other things can fly thought
+
+In help for smoother browsing faster loading times mean a smoother more enjoyable web experience for everyone
+
+In modern days, http2 is the most common way for browsers and servers to chat. it like the upgraded super powered walkie talkie system everyone uses for the web
+
+in the nutshel http2 is a big leap forward from http1 it makes web browsing way faster and smoother by tlking more efficiently and handling mulitple conversaations at once. thats the magic of the 
+modern web.
+
+
+
+Object and internal representation in js
+
+Objects are core part of js. think of them as containers that hold different pieces of information. these containers are made up of pairs: a key and value. for example you could have an object representing 
+a person with keys like name age and city and their corresponding values
+
+
+storing Objects
+when you create an object, js puts it in a special memory are called the heap. this is where data is stored flexibly, meaning it can be change size as needed. instead of directly storing the object in a variable.
+the variable holds a kind of address pointing to the object location in heap. this is why changes to an object are seen everywhere its used
+
+inside object
+the properties are key value pairs. you can access them using a dot or square brackets
+the prototype are every object has a prent called a prototype this allows objects to inherit properites and methods from other objects.
+
+example
+const person={
+    firstname :"john",
+    lastname="doe",
+    age:30;
+}
+
+In real world, creating data structures storing complex information, like aproduct catalog or a user profile. 
+building user interfaces representing elements ona web page and their interactios.
+organizing code, grouping related functions and data together for better modularity
+asynchrounous programming, handling callbacks and promises
